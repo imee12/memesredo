@@ -1,0 +1,133 @@
+p {
+  background-color: #FFE1FF; }
+
+img {
+  border: solid line black 3px; }
+
+/* old styles */
+body {
+  margin: 0;
+  padding: 0; }
+
+section img, aside img {
+  width: 280px; }
+
+header {
+  display: block;
+  width: 100%;
+  font-family: 'Shadows Into Light', serif;
+  font-size: 75px;
+  padding: 22px; }
+
+header img {
+  width: 145px;
+  height: 145px; }
+
+.boxed {
+  font-family: 'Shadows Into Light', serif, serif;
+  width: 100%;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #C6E2FF;
+  font-size: 24px; }
+
+nav a {
+  font-size: 20px;
+  font-family: 'Shadows Into Light', serif, serif;
+  display: block;
+  color: black;
+  padding: 15px;
+  text-decoration: none;
+  margin: 1px 1px 1px 180px; }
+
+nav ul {
+  margin: 20px;
+  list-style-type: none;
+  padding: 20px;
+  text-decoration: none; }
+
+nav li {
+  display: inline-block;
+  margin-top: 0;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: auto; }
+
+section, aside {
+  display: inline-block;
+  vertical-align: top;
+  padding: 20px; }
+
+section {
+  width: 300px;
+  margin: 1px 1px 1px 180px; }
+
+aside {
+  width: 300px;
+  margin: 1px 1px 1px 180px; }
+
+h2 {
+  font-family: 'Shadows Into Light', serif, serif;
+  font-size: 44px; }
+
+header, footer {
+  display: block;
+  width: 100%;
+  background-color: #C6E2FF;
+  text-decoration: none; }
+
+footer {
+  font-family: 'Shadows Into Light', serif, serif;
+  font-size: 15px;
+  padding: 12px; }
+
+
+  @media screen and (max-width: 321px) {
+
+    header {
+      font-size: 40px;
+    }
+
+    header img {
+      width:100px;
+      height: 100px;
+    }
+
+
+    .boxed img {
+      width: 100%;
+    }
+
+    section img, aside img {
+      width: 100%;
+    }
+    section {
+      width: 90%;
+      margin: 1px 50px 1px 1px;
+      text-align: center;
+    }
+    aside {
+      width: 90%;
+      margin: 1px 50px 1px 1px;
+      text-align: center;
+    }
+
+    nav li{
+      display: inline-block;
+      width: 75px;
+
+    }
+
+    nav u {
+      display: inline-block;
+
+    }
+
+    nav a {
+      display: inline-block;
+      margin: 1px 100px 1px 1px;
+      font-size: 15px;
+    }
+
+  }
+  

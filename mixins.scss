@@ -1,0 +1,21 @@
+
+@mixin header($display:block, $font-size:75px, $width:100%, $padding:22px) {
+  display: $display;
+  font-size: $font-size;
+  width: $width;
+  padding: $padding;
+}
+
+
+
+
+@mixin hfcolor($background-color: #C6E2FF) {
+  background-color: #C6E2FF;
+}
+
+
+h1 {
+  font-size: 55px;
+
+  padding: 25px;
+}

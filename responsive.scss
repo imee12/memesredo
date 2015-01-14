@@ -1,0 +1,48 @@
+@media screen and (max-width: 321px) {
+
+  header {
+    font-size: 40px;
+  }
+
+  header img {
+    width:100px;
+    height: 100px;
+  }
+
+
+  .boxed img {
+    width: 100%;
+  }
+
+  section img, aside img {
+    width: 100%;
+  }
+  section {
+    width: 90%;
+    margin: 1px 50px 1px 1px;
+    text-align: center;
+  }
+  aside {
+    width: 90%;
+    margin: 1px 50px 1px 1px;
+    text-align: center;
+  }
+
+  nav li{
+    display: inline-block;
+    width: 75px;
+
+  }
+
+  nav u {
+    display: inline-block;
+
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 1px 100px 1px 1px;
+    font-size: 15px;
+  }
+
+}
