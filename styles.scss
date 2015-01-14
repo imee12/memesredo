@@ -1,177 +1,136 @@
+@import 'mixins';
+@import 'variables';
 
 
 
-$background-color: #FFE1FF;
-$border: solid line 1px black;
-$default-font-family: 'Shadows Into Light', serif;
+
 
 p {
-  background-color: $background-color;
+  background-color: #FFE1FF; }
+
+img {
+  @include border();
 }
 
-section img {
-  border: $border;
-}
-
-/* old styles */
-
+    /* old styles */
 body {
-  margin: 0;
-  padding: 0;
-}
+      font-family: $default-font-family;
+      margin: 0;
+      padding: 0; }
 
 section img, aside img {
-  width: 280px;
-}
+        width: 280px; }
 
+  header {
+        @include header();
+      }
 
-@mixin width ($width: 100%) {
-  width: 100%;
-}
+  header img {
+            width: 145px;
+            height: 145px; }
 
-header {
-  display: block;
-  @include width;
-  font-family: $default-font-family;
-  font-size: 75px;
-  padding: 22px;
-
-}
-
-header img {
-  width: 145px;
-  height: 145px;
-  border: $border;
-}
 .boxed {
-  font-family: $default-font-family;
-  @include width;
-  padding: 10px;
-  margin: 10px;
-  border: 1px solid #C6E2FF;
-  font-size: 24px;
-}
+
+            width: 100%;
+            padding: 10px;
+            margin: 10px;
+            border: 1px solid #C6E2FF;
+            font-size: 24px; }
+
+  nav a {
+        font-size: 20px;
 
 
-
-
-nav a {
-  font-size: 20px;
-  font-family: $default-font-family;
-  display: block;
-  color: black;
-  padding: 15px;
-  text-decoration: none;
-  margin: 1px 1px 1px 180px;
-
-
-}
-
+        display: block;
+        color: black;
+        padding: 15px;
+        text-decoration: none;
+        margin: 1px 1px 1px 180px; }
 
 nav ul {
-  margin: 20px;
-  list-style-type: none;
-  padding: 20px;
-  text-decoration: none;
-}
-
+        margin: 20px;
+        list-style-type: none;
+        padding: 20px;
+        text-decoration: none; }
 
 nav li {
-  display: inline-block;
-  margin-top: 0;
-  margin-right: auto;
-  margin-bottom: 0;
-  margin-left: auto;
-}
+        display: inline-block;
+        margin-top: 0;
+        margin-right: auto;
+        margin-bottom: 0;
+        margin-left: auto; }
 
 section, aside {
-  display: inline-block;
-  vertical-align: top;
-  padding: 20px;
-
-
-}
-
+        display: inline-block;
+        vertical-align: top;
+        padding: 20px; }
 
 section {
-  width: 300px;
-  margin: 1px 1px 1px 180px;
-
-}
+        width: 300px;
+        margin: 1px 1px 1px 180px; }
 
 aside {
-  width: 300px;
-  margin: 1px 1px 1px 180px;
-
-
-}
+        width: 300px;
+        margin: 1px 1px 1px 180px; }
 
 h2 {
-  font-family: $default-font-family;
-  font-size: 44px;
-}
+        font-family: 'Shadows Into Light', serif, serif;
+        font-size: 44px; }
 
 header, footer {
-  display:block;
-  width:100%;
-  background-color: #C6E2FF;
-  text-decoration: none;
-
-}
+      @include hfcolor();
+      }
 
 footer {
-  font-family: $default-font-family;
-  font-size: 15px;
-  padding: 12px;
-}
+
+        font-size: 15px;
+        padding: 12px; }
 
 
 @media screen and (max-width: 321px) {
 
+header {
+        font-size: 40px;
+    }
 
-  header {
-    font-size: 40px;
+header img {
+        width:100px;
+        height: 100px;
   }
 
-  header img {
-    width:100px;
-    height: 100px;
+
+.boxed img {
+        width: 100%;
   }
 
-
-  .boxed img {
-    @include width;
+section img, aside img {
+      width: 100%;
   }
-
-  section img, aside img {
-    @include width;
-  }
-  section {
-    @include width(90%);
+section {
+    width: 90%;
     margin: 1px 50px 1px 1px;
     text-align: center;
   }
-  aside {
-    @include width(90%);
+aside {
+    width: 90%;
     margin: 1px 50px 1px 1px;
     text-align: center;
   }
 
-  nav li{
+nav li {
     display: inline-block;
     width: 75px;
 
   }
 
-  nav u {
+nav u {
     display: inline-block;
+}
 
-  }
-
-  nav a {
+nav a {
     display: inline-block;
     margin: 1px 100px 1px 1px;
-    font-size: 15px;
-  }
-
+  font-size: 15px;
 }
+
+    }

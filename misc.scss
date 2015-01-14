@@ -1,7 +1,10 @@
+@import 'mixins';
+@import 'variables';
 
-$background-color: #FFE1FF;
-$border: solid line 1px black;
-$default-font-family: 'Shadows Into Light', serif;
+
+
+
+
 
 
 body {
@@ -11,24 +14,18 @@ body {
 }
 
 
-@mixin font-size($font-size: 75px) {
-  font-size: 75px;
-}
-
 header {
-  display: block;
-  width: 100%;
-
-
-  @include font-size;
-  padding: 22px;
-
+@include header();
 }
 
 header, footer {
 
-  background-color: #C6E2FF;
+  @include hfcolor();
 
+}
+
+img {
+  @include border();
 }
 
 header img {
@@ -38,23 +35,19 @@ header img {
 
 p {
 
-  @include font-size(25px)
-/*  font-size: 25px;*/
+
+  font-size: 25px;
   margin: 12 12 12 12;
   padding: 12px;
 }
 
-@mixin width($width: 100%) {
-  width: 100%;
-}
-
 h1 {
 
-  @include width;
+
+  width: 100%;
   padding: 10px;
   margin: 10px;
-  @include font-size(33px);
-  /*font-size: 33px;*/
+  font-size: 33px;
 }
 
 
@@ -74,17 +67,15 @@ section {
 
 section img, aside img {
 
-  @include width;
+  width: 100%;
 }
 
 section, nav {
-  @include width(20%);
+  width: 20%;
 }
 
 nav a {
-  @include font-size(24);
-
-  /*font-size: 24px;*/
+  font-size: 24px;
   display: block;
   color: black;
   padding: 15px;
@@ -111,15 +102,14 @@ nav li {
 
 footer {
   display: inline-block;
-  @include width;
+  width: 100%;
 }
 
 @media screen and (max-width: 321px) {
 
 
   header {
-    @include font-size(40px);
-    /*font-size: 40px;*/
+    font-size: 40px;
   }
 
   header img {
@@ -128,10 +118,10 @@ footer {
   }
 
   section, nav {
-    @include width(98%);
+    width: 98%;
   }
 
-}  
+
 
 
 

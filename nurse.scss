@@ -1,9 +1,7 @@
 @import 'mixins';
+@import 'variables';
 
 
-$background-color: #FFE1FF;
-$border: solid line 1px black;
-$default-font-family: 'Shadows Into Light', serif;
 
 
 
@@ -15,7 +13,7 @@ body {
 
 
 header {
-  @include header;
+  @include header();
 }
 
 /*header {
@@ -31,7 +29,7 @@ header {
   background-color: #C6E2FF;
 }*/
 header, footer {
-  @include hfcolor;
+  @include hfcolor();
 }
 
 
@@ -55,6 +53,9 @@ section, aside, nav {
 
 }
 
+img {
+  @include border();
+}
 
 section img {
   width: 300px;

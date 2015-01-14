@@ -2,10 +2,11 @@ p {
   background-color: #FFE1FF; }
 
 img {
-  border: solid line black 3px; }
+  border: solid 2px black; }
 
 /* old styles */
 body {
+  font-family: 'Shadows Into Light', serif;
   margin: 0;
   padding: 0; }
 
@@ -14,9 +15,8 @@ section img, aside img {
 
 header {
   display: block;
-  width: 100%;
-  font-family: 'Shadows Into Light', serif;
   font-size: 75px;
+  width: 100%;
   padding: 22px; }
 
 header img {
@@ -24,7 +24,6 @@ header img {
   height: 145px; }
 
 .boxed {
-  font-family: 'Shadows Into Light', serif, serif;
   width: 100%;
   padding: 10px;
   margin: 10px;
@@ -33,7 +32,6 @@ header img {
 
 nav a {
   font-size: 20px;
-  font-family: 'Shadows Into Light', serif, serif;
   display: block;
   color: black;
   padding: 15px;
@@ -71,63 +69,36 @@ h2 {
   font-size: 44px; }
 
 header, footer {
-  display: block;
-  width: 100%;
-  background-color: #C6E2FF;
-  text-decoration: none; }
+  background-color: #C6E2FF; }
 
 footer {
-  font-family: 'Shadows Into Light', serif, serif;
   font-size: 15px;
   padding: 12px; }
 
-
-  @media screen and (max-width: 321px) {
-
-    header {
-      font-size: 40px;
-    }
-
-    header img {
-      width:100px;
-      height: 100px;
-    }
-
-
-    .boxed img {
-      width: 100%;
-    }
-
-    section img, aside img {
-      width: 100%;
-    }
-    section {
-      width: 90%;
-      margin: 1px 50px 1px 1px;
-      text-align: center;
-    }
-    aside {
-      width: 90%;
-      margin: 1px 50px 1px 1px;
-      text-align: center;
-    }
-
-    nav li{
-      display: inline-block;
-      width: 75px;
-
-    }
-
-    nav u {
-      display: inline-block;
-
-    }
-
-    nav a {
-      display: inline-block;
-      margin: 1px 100px 1px 1px;
-      font-size: 15px;
-    }
-
-  }
-  
+@media screen and (max-width: 321px) {
+  header {
+    font-size: 40px; }
+  header img {
+    width: 100px;
+    height: 100px; }
+  .boxed img {
+    width: 100%; }
+  section img, aside img {
+    width: 100%; }
+  section {
+    width: 90%;
+    margin: 1px 50px 1px 1px;
+    text-align: center; }
+  aside {
+    width: 90%;
+    margin: 1px 50px 1px 1px;
+    text-align: center; }
+  nav li {
+    display: inline-block;
+    width: 75px; }
+  nav u {
+    display: inline-block; }
+  nav a {
+    display: inline-block;
+    margin: 1px 100px 1px 1px;
+    font-size: 15px; } }
